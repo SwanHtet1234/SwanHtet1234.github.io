@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-    content: "";
+    content: '';
     background-color: #0086f5;
     width: 0;
     position: absolute;
@@ -81,7 +81,7 @@ nav ul li:hover a::after {
     display: flex;
 }
 
-@media(max-width: 930px) {
+@media (max-width: 930px) {
     nav {
         display: none;
         position: absolute;
@@ -164,7 +164,7 @@ nav ul li:hover a::after {
     line-height: 25px;
 }
 
-@media(max-width: 1050px) {
+@media (max-width: 1050px) {
     .firstbox {
         flex-direction: column;
     }
@@ -261,11 +261,12 @@ nav ul li:hover a::after {
     z-index: 200;
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
     .secondboxbottom {
         max-width: 600px;
         width: 80%;
     }
+
     .secondboxbottombottom .text {
         font-size: 10px;
     }
@@ -291,7 +292,7 @@ nav ul li:hover a::after {
 }
 
 .thirdboxtop::after {
-    content: "";
+    content: '';
     width: 70%;
     height: 3px;
     background-color: #0086f5;
@@ -308,16 +309,19 @@ nav ul li:hover a::after {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 
 .thirdboxbottomrow {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
 }
 
 .eachskillbox {
     display: flex;
+    min-width: 200px;
     flex-direction: column;
     align-items: center;
     margin: 20px;
@@ -336,15 +340,15 @@ nav ul li:hover a::after {
     letter-spacing: 1px;
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
     .thirdboxbottomrow {
         flex-wrap: wrap;
     }
+
     .eachskillbox {
         min-width: 40%;
     }
 }
-
 
 /* @media(max-width: 650px) {
     .eachskillbox img {
@@ -371,6 +375,7 @@ nav ul li:hover a::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40%;
 }
 
 .fourthboxbottomsmallbox {
@@ -379,6 +384,9 @@ nav ul li:hover a::after {
     padding: 0 40px;
     position: relative;
     height: 160px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .fourthboxbottomsmallbox .logo {
@@ -410,6 +418,7 @@ nav ul li:hover a::after {
     letter-spacing: 1px;
     color: white;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 .position span {
@@ -418,23 +427,29 @@ nav ul li:hover a::after {
 }
 
 .description {
-    max-width: 450px;
+    width: 100%;
     font-size: 12px;
     color: rgb(170, 170, 170);
     line-height: 25px;
     text-align: justify;
 }
 
-@media(max-width: 1260px) {
+@media (max-width: 1260px) {
     .fourthboxbottomsmallbox {
         height: 180px;
     }
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
     .fourthboxbottom {
         flex-direction: column;
+        align-items: center;
     }
+
+    .fourthboxbottomcolumn {
+        width: 90%;
+    }
+
     .fourthboxbottomsmallbox {
         height: unset;
     }
@@ -508,13 +523,13 @@ nav ul li:hover a::after {
     color: #0086f5;
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     .fifthbottomboxrow {
         flex-direction: column;
     }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     .projectsmallbox img {
         max-width: 300px;
     }
@@ -531,7 +546,7 @@ nav ul li:hover a::after {
 
 .sixthboxfirstbottom {
     max-width: 350px;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 30px;
     font-size: 15px;
     line-height: 25px;
@@ -589,13 +604,13 @@ nav ul li:hover a::after {
     color: #0086f5;
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
     .sixthboxsecondbottomrow {
         flex-direction: column;
     }
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     .sixthboxfirstbottom {
         font-size: 12px;
     }
@@ -608,7 +623,7 @@ nav ul li:hover a::after {
     color: gray;
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
     .seventhbox {
         font-size: 12px;
     }
